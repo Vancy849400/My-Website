@@ -1,6 +1,6 @@
 $(function () {
     $(".menu").click(function () {
-        $(".list-form").fadeToggle(3000);
+        $(".list-form").fadeToggle(1000);
     })
 })
 
