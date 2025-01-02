@@ -84,6 +84,8 @@ li > a:hover {
   color: #ffffff;
   margin: 0 0 0 10px;
   cursor: pointer;
+  border-radius: 14px;
+  
 }
 
 .btn:hover {
