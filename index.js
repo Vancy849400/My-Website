@@ -1,33 +1,18 @@
-$(function () {
-    $(".menu").click(function () {
-        $(".list-form").fadeToggle(1000);
-    })
-})
 
-// JQUERY ANIMATION
-// $(function () {
-//     $(".btn3").click(function () {
-//         $(".btn3").animate({opacity:0.5})
-//     })
-// })
-
-// import express from "express";
-// const app = express();
-// const port = 3000;
-// app.listen(port,()=>{
-//     console.log("Server running on "+port);
-// })
-
-// VANILLA JAVASCRIPT
-
-// const menu = document.querySelector(".menu");
-// menu.addEventListener('click',()=>{
-//     const list = document.querySelector(".list-form");
-//     list.classList.toggle("class");
-// })
-
-
-$(function () {
-    $(".hero-section").slideDown(3000) 
-})
-
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle"); // Select the toggle button
+    const mobileMenu = document.getElementById("mobile-menu"); // Select the mobile menu
+  
+    // Add click event listener to the toggle button
+    menuToggle.addEventListener("click", () => {
+      // Toggle the "hidden" class to show or hide the mobile menu
+      mobileMenu.classList.toggle("hidden");
+  
+      // Optional: Add animation for better user experience
+      if (!mobileMenu.classList.contains("hidden")) {
+        mobileMenu.classList.add("animate-fade-in");
+      } else {
+        mobileMenu.classList.remove("animate-fade-in");
+      }
+    });
+  });
