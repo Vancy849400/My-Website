@@ -42,6 +42,12 @@
       .bounce-in {
         animation: bounceIn 1.2s ease-in-out;
       }
+
+      @media(max-width:645px){
+        #home {
+          margin-top: 5rem;
+        }
+      }
     </style>
   </head>
   <body class="bg-gray-100 text-gray-800">
@@ -162,7 +168,7 @@ class="hidden bg-gray-100 shadow-md md:hidden flex flex-col items-center space-y
     <!-- Hero Section Start -->
     <header
       id="home"
-      class="bg-gray-100 h-screen flex items-center justify-center px-4"
+      class="bg-gray-100 h-screen flex items-center justify-center px-4 m-10 md:mt-10"
     >
       <div
         class="container mx-auto flex flex-col md:flex-row items-center gap-8"
